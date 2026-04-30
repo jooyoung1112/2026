@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> 
+    <title>Freitag by JOOYOUNG</title>
+    <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+    <link href="dist/jquery.bxslider.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="jquery-3.6.0.min.js" type="text/javascript" text="javascript"></script>
+    <script src="js/main.js" type="text/javascript" text="javascript"></script> 
+    <script src="dist/jquery.bxslider.min.js" type="text/javascript" text="javascript"></script>
+ 
+
+    <script>
+		$(function(){
+			$('#con_2_slide').bxSlider({
+				mode: 'fade',
+                slideWidth: 1260,
+                //autoHover: true,
+				auto: true,
+				speed: 200,
+		
+			});//bxslider닫기
+
+            $('#con_4_slide').bxSlider({
+                slideWidth: 1260,
+				mode: 'fade',
+                //autoHover: true,
+				auto: true,
+				speed: 200,
+		
+			});//bxslider닫기
+
+		});//구문닫기
+  </script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="wrap_center" class="clearfix">
+             <!-- header_wrap-->
+             <div id="header_wrap">
+                <header>
+                    <div id="logo">
+                        <h1><a href="../"><img src="img/logo.svg" alt="로고"></a></h1>
+                     </div>
+    
+    
+                    <div id="search_bar_menu" class="clearfix">
+                       
+                        
+                        <form>
+                            <div id="search_bar_wrap" class="clearfix">
+                                <input type="text" name="text"/>
+                                <button id="search_bar">
+                                    <img src="img/search_icon.svg" alt="검색돋보기">
+                                </button>
+                            </div>    
+                        </form>
+                        
+    
+                        <nav>
+                            <ul class="clearfix">
+                                <li class="menu"><span><a href="../bags">Bags</a></span></li>
+                          
+                                <li class="menu"><span><a href="../accessories">Accessories</a></span></li>
+                        
+                                <li class="menu"><span><a href="../our manifesto">Our Manifesto</a></span></li>
+                    
+                                <li class="menu"><span><a href="#">History</a></span></li>
+
+                                <li class="menu"><span><a href="../production steps">Production Steps</a></span></li>
+                            </ul>
+                        </nav>
+                    
+                    </div> 
+                    <!--search_bar_menu-->
+                </header>
+             </div>
+             <!-- header_wrap-->
+
+             <!-- con_wrap -->
+             <div id="con_wrap">
+                <!--con_1-->
+                <section id="con_1">
+                    <div id="con_1_wrap">
+                        <div id="con_h2_text_box">
+                            <h2>
+                                The Birth of Freitag
+                            </h2>
+                        </div>
+                        <p>미래적인 비지니스 모델로 지난 30년간 우리와 함께하고 있는 프라이탁. 우리의 시작을  90년대 초로 시간을 돌려 차근차근 알려줍니다.</p>
+                        <button class="clearfix">
+                            <span>
+                                프라이탁 시작 과정 자세히 읽기 
+                            </span>
+                            <div>
+                            </div>
+                        </button>
+                    </div>
+                </section>
+                <!--con_1-->
+
+                <!--con_2-->
+                <section id="con_2">
+                    <div id="con_2_wrap">
+                        <ul id="con_2_slide">
+                            <li>
+                                <div class="con_2_image_wrap">
+                                    <img src="img/con_2_1.jpg" alt="프라이탁 형제들">
+                                    <h3>Let's Go Back To 1993</h3>
+                                </div>
+                                
+                                <div class="con_2_text_wrap clearfix  ">
+                                    <span>Daniel  and  Markus  Freitag<br/>
+                                        Testing  Manufacturing</span>
+                                   <span>1993,  Zürich</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="con_2_image_wrap">
+                                    <img src="img/con_2_2.jpg" alt="프라이탁 형제들">
+                                    <!-- <h3>Let's Go Back To 1993</h3> -->
+                                </div>
+                                
+                                <div class="con_2_text_wrap clearfix ">
+                                    <span>Daniel  and  Markus  Freitag's<br/>
+                                        Apartment</span>
+                                   <span>1993,  Zürich</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <button id="con_2_arrow">
+                        <div></div>
+                    </button> -->
+
+                </section>
+                <!--con_2-->
+
+                <!-- con_3 -->
+                <section id="con_3">
+                    <div id="con_3_wrap" class="clearfix">
+                        <div id="con_3_text">
+                            <h3>Between Mattress And  Stereo System </h3>
+                            <p>마커스 프라이탁은  그의 방, 매트리스와 스테레오 시스템 사이에서세척된 트럭 방수포를 펼치고 패턴을 그렸습니다.  그의 아파트는 가방 공장으로 탈바꿈했습니다. 아침에 일어나서 – 음, 정오라고 합시다 – 그리고 샤워를 하려고 했을 때, 욕조는 이 검은 양조주에 떠 있는 트럭 방수포 조각으로 가득 차 있었습니다. 복도는 자전거 내부 튜브로 가득 찬상자로가득했습니다. 아침부터 저녁까지 부엌에서 덜그럭거리며 들리는 것은 거리의 소음을 힘들이지 않고 빨아들이는 공업용 재봉틀이었습니다.</p>
+                        </div>
+
+                        <div id="con_3_img">
+                            <img src="img/con3_1.jpg" alt="프라이탁 백 첫번째 프로토타입">
+                            <span>The first prototype of the 1993 Messenger Bag. Hand-sewn from used truck tarps, car safety belts and bicycle inner tubes, all in a small apartment in Zurich.</span>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- con_3 -->
+
+                <!--con_4-->
+                <section id="con_4">
+                    <div id="con_4_wrap">
+                        <ul id="con_4_slide">
+                            <li >
+                                <div class="con_4_img_wrap">
+                                    <img src="img/con_4_wide.png" alt="프라이탁 형제들">
+                                </div>
+                                
+                                <div class="con_4_text_wrap clearfix">
+                                    <span>
+                                        Daniel  and  Markus  Freitag<br/>
+                                        Testing  Manufacturing
+                                    </span>
+                                    <span>1993,  Zürich</span>
+                                </div>
+
+                                <p>그 동안 다니엘  프라이탁은 미국 여행에서 돌아와 아파트의 마지막 여유 공간에 컴퓨터와 프린터를 설치했습니다. 그는 주문, 배송, 재고 등을 위한 데이터베이스를 개발 중이었습니다. </p> 
+
+                            </li>
+
+                            <li >
+                                <div class="con_4_img_wrap">
+                                    <img src="img/con_4_wide_2.png" alt="프라이탁 형제들">
+                                </div>
+                                
+                                <div class="con_4_text_wrap clearfix">
+                                    <span>
+                                        Daniel  and  Markus  Freitag<br/>
+                                        The very First Sampling Proccess
+                                    </span>
+                                    <span>1993,  Zürich</span>
+                                </div>
+
+                                <p>그 동안 다니엘  프라이탁은 미국 여행에서 돌아와 아파트의 마지막 여유 공간에 컴퓨터와 프린터를 설치했습니다. 그는 주문, 배송, 재고 등을 위한 데이터베이스를 개발 중이었습니다. </p> 
+
+                            </li>
+                        </ul>
+                    </div>
+
+               
+
+                    <!-- <button id="con_4_arrow">
+                        <div></div>
+                    </button> -->
+
+                </section>
+                <!--con_4-->
+
+
+                 <!-- con_5 -->
+                 <section id="con_5">
+                    <div id="con_5_wrap" class="clearfix">
+                        <div id="con_5_text">
+                            <h3>The Birth of Frietag </h3>
+                            <p>어느 순간,  첫 번째 프라이탁 가방을 축하하는 파티가 열렸습니다. 프라이탁 가방은 도시 고속도로 옆 보도에 있는 가스통에서 제공되는 음료와 함께한 작은 파티에서 소개되었고 많은 사람들에게 환영을 받았습니다. 사람들은 술을 마시고, 채팅을 하고, 가방을 사는 것을 즐겼습니다. 시간을 되돌리고 다른 일을 할 수 있었다면 아마 카메라를 들고 역사적인 사건으로 밝혀진 것을 기록했을 것입니다. 하지만 여전히 좋은 기억이 몇 개 있고 그것만으로도 충분합니다.</p>
+                        </div>
+
+                        <div id="con_5_img">
+                            <img src="img/con_5_1.jpg" alt="첫번째 프라이탁 백">
+                            <span>The first production of the 1993 Messenger Bag. machine-sewn from used truck tarps, car safety belts and bicycle inner tubes.</span>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- con_5 -->
+               
+            </div> <!--con_wrap-->
+
+            <!--footer-->
+            <footer>
+                <div id="footer_upper">
+                    <div id="footer_upper_text_box">
+                        <h3>Todays,</h3>
+                        <h4>
+                            프라이탁은 성숙해졌으며 세련되고 활기찬 대도시로 취리히와 동의어입니다. <br/>
+                            프라이탁은 혁신, 창의성 및 환경 인식을 의미합니다. 그러나 그것은 또 다른 이야기, 앞으로의 프라이탁이야기로 더 풍성해 질 것입니다.  
+                        </h4>
+                    </div>
+                </div>
+                <!--footer_upper-->
+
+                <<div id="footer_bottom">
+                    <div id="footer_bottom_wrap" class="clearfix">
+                        <div id="footer_bottom_left">
+                            <span>Becaues Future Needs More Creativity.</span>
+                        </div>
+                        <div id="footer_bottom_right" class="clearfix">
+                            <div class="footer_bottom_right_text_box">
+                                <span class="footer_bottom_right_text_box_header">
+                                    Freitag.com 
+                                </span>
+                                <span class="footer_bottom_right_text_box_contents">
+                                    Bag<br/>
+                                    Accessaries<br/>
+                                    Our Manifesto<br/>
+                                    History<br/>
+                                    Production Steps
+                                </span>
+                            </div>
+
+                            <div class="footer_bottom_right_text_box">
+                                <span class="footer_bottom_right_text_box_header">
+                                    Online Service                                                  
+                                </span>
+                                <span class="footer_bottom_right_text_box_contents">
+                                    Payment Methods<br/>
+                                    Shipping Options<br/>
+                                    My Account<br/>
+                                    Returns<br/>
+                                    Care & Services<br/>
+                                    FAQ
+                                </span>
+                            </div>
+
+                            <div class="footer_bottom_right_text_box">
+                                <span class="footer_bottom_right_text_box_header">
+                                    The Studio of Freitag                                                 
+                                </span>
+                                <span class="footer_bottom_right_text_box_contents">
+                                    Career<br/>
+                                    Data Protection<br/>
+                                    General Terms and Condition<br/>
+                                    Copyright<br/>
+                                    Imprint<br/>
+                                </span>
+                            </div>
+                        </div>
+                    </div> 
+                    <!--footer_bottom_wrap-->   
+                </div> 
+                 <!--footer_bottom-->
+
+
+                 <div id="footer_info">
+                    <div id="footer_ip">
+                        @ Freitag 2022
+                    </div>
+                    <div id="footer_sns" class="clearfix">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div> 
+            </footer>
+            <!--footer-->
+        </div> 
+        <!-- "wrap_center" -->
+    </div>
+    <!-- "wrap" -->
+</body>
+</html>

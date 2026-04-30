@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> 
+    <title>Friz Hansen by JOOYOUNG</title> 
+    <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+    <link href="dist/jquery.bxslider.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        @font-face {font-family: "Hansen Grotesque";
+          src: url("1e8f3e91ec75b968da52ba69cc3be114.eot"); /* IE9*/
+          src: url("1e8f3e91ec75b968da52ba69cc3be114.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+          url("1e8f3e91ec75b968da52ba69cc3be114.woff2") format("woff2"), /* chrome、firefox */
+          url("1e8f3e91ec75b968da52ba69cc3be114.woff") format("woff"), /* chrome、firefox */
+          url("1e8f3e91ec75b968da52ba69cc3be114.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+          url("1e8f3e91ec75b968da52ba69cc3be114.svg#Hansen Grotesque") format("svg"); /* iOS 4.1- */
+        }
+    </style>
+
+    <script src="jquery-3.6.0.min.js" type="text/javascript" text="javascript"></script>
+    <script src="js/main.js" type="text/javascript" text="javascript"></script> 
+    <script src="dist/jquery.bxslider.min.js" type="text/javascript" text="javascript"></script>
+
+    <script>
+        $(function(){    
+           // alert();
+                           $('#con_1_slide').bxSlider({
+                                   auto: true,
+                                   autoControls: false,   //오른쪽 하단에 있는 동영상모양의 아이콘. 쓰기 싫으면 지우면 됨. 
+                                   stopAutoOnClick: false, //좌우 버튼을 클릭하여 사진을 넘기면 넘겨진 사진만 보여지게되며  auto가 멈추게된다. 
+                                   pager: true,  //img tag에서 title=""이 사진에 마우스를 대면 마우스 하단에 꼬리표처럼 보여짐. 사진 부연설명이 목적.
+                                   slideWidth: 1600
+                           });
+   
+   
+        });//$function구문닫기
+       </script>
+
+ 
+</head>
+<body>
+    <div id="wrap">
+        <div id="wrap_center">
+           
+
+            <!-- header -->
+             <header>
+                 <div id="header_wrap" class="clearfix" >
+                    <div id="logo_wrap">
+                        <div id="logo">
+                           <h1><a href="../"><img src="img/logo.svg" alt="프리츠 한세 로고"></a></h1>
+                        </div>
+                   </div>
+                   
+                   <div id="menu_wrap">     
+                        <ul id="menu" class="clearfix">
+                            <li class="menu_item">
+                               <span>PRODUCT</span>
+                            </li>
+                            <li class="menu_item">
+                               <span>INSPIRATION</span>
+                           </li>
+                           <li class="menu_item">
+                               <span><a href="../about_us">ABOUT US</a></span>
+                           </li>
+                           <li class="menu_item">
+                               <span><a href="../designers">DESIGNERS</a></span>
+                           </li>
+                           <li class="menu_item">
+                               <span>NEWSLETTER</span>
+                           </li>
+                           <li class="menu_item">
+                               <span>EN/KOR</span>
+                           </li>
+                           <li class="menu_item search_icon">
+                                <span><img src="img/new_search_bar_2.svg" alt="검색  아이콘"></span> 
+                           </li>
+                        </ul>
+                   </div>
+
+                 </div>
+            </header>
+             <!-- header-->
+
+
+             <!-- nav -->
+            <nav> 
+                <div id="sub_menu_wrap">
+                    <ul id="sub_menu"  class="clearfix">
+                        <li class="sub_menu_item">
+                            <div><a href="#">CHAIR</a></div>
+                            <div><a href="../sofa">SOFA</a></div>
+                            <div><a href="../table">TABLE</a></div>
+                        </li>
+    
+                        <li class="sub_menu_item">
+                            <div><a href="../new_colors">NEW COLORS</a></div>
+                            <div><a href="../7_cool_architect">7 COOL ARCHITECT</a></div>
+                       </li> 
+
+                       <li class="sub_menu_item">
+                            <form class="clearfix" action="">
+                                <input type="text" name="newsletter_emailaddress" value="ENTER YOUR EMAIL ADDRESS">
+                                <button>OK</button>
+                            </form>
+                       </li>
+
+                       <li class="sub_menu_item">
+                            <form class="clearfix" action="">
+                                <input type="text" name="search_bar" value="">
+                                <button>SEARCH</button>
+                            </form>
+                   </li>
+                    </ul>
+                </div>
+            </nav>  
+            <!-- nav -->
+
+
+             <!-- con_wrap -->
+             <div id="con_wrap">
+                <!--con_1-->
+                <section id="con_1">
+                    <div id="con_1_slide_wrap">
+                        <ul id="con_1_slide">
+                            <li>
+                                <img src="img/con_1_1_new.jpg" alt="체어 1">
+                            </li>
+
+                            <li>
+                                <img src="img/con_1_2_new.jpg" alt="체어 2">
+                            </li>
+
+                            <li>
+                                <img src="img/con_1_4_new.jpg" alt="체어 3">
+                            </li>
+
+                            <li>
+                                <img src="img/con_1_3_new.jpg" alt="체어 4">
+                            </li>
+                        </ul>
+ 
+                        
+                    </div> <!--con_1_slide_wrap-->
+
+                </section>
+                <!--con_1-->
+
+                <!-- con_2 -->
+                <section id="con_2">
+                    <div id="con_2_wrap">
+                        <div id="con_2_title">
+                            <div id="con_2_text_left">
+                                <h2>CHAIR</h2>
+                                <p>
+                                    체어는 한스 베그너의 말처럼, 누군가 앉았을 때 비로소 진정한 의미를 가집니다. <br/>
+                                    실제로, 체어에는 개인의 취향과 안목이 반영되어 앉는 사람을 표현하는 수단이 되기도 합니다.
+                                </p>
+                            </div>
+    
+                            <button id="con_2_text_right" class="clearfix">
+                                <span>인기 시리즈 더보기</span>
+                                 
+                                <div id="con_2_text_right_arrow">
+                                    <img src="img/arrow_black.svg" alt="화살표">   
+                                </div>  
+                            </button>  
+                        </div> 
+                        <!-- con_2_title -->
+
+
+                        <div id="con_2_contents">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="chair_product"><img src="img/con_2_1.jpg" alt="SERIES 7™"></a>
+                                    <span>SERIES 7™</span>
+                                </li>
+                                <li>
+                                    <a href="chair_product"><img src="img/con_2_2.jpg" alt="ANT™"></a>
+                                    <span>ANT™</span>
+                                </li>
+                            </ul>
+
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="chair_product"><img src="img/con_2_3.jpg" alt="N01™"></a>
+                                    <span>N01™</span>
+                                </li>
+                                <li>
+                                    <a href="chair_product"><img src="img/con_2_4.jpg" alt="NAP™"></a>
+                                    <span>NAP™</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <!-- con_2_wrap -->
+                </section>
+                <!-- con_2 -->
+
+                 <!--con_3-->
+                 <section id="con_3">
+                    <div id="con_3_wrap">
+                        <!--con_4_title-->
+
+                        <div id="con_3_sort_wrap" class="clearfix">
+                            <label for="">Filter by:</label>
+                            <select name="type of chair" id="sort">
+                                <option value="">Type of Chair</option>   
+                            </select>
+                            <select name="product series" id="sort">
+                                <option value="">Product Series</option>   
+                            </select>
+                            <select name="Designers" id="sort">
+                                <option value="">Designers</option>   
+                            </select>
+                        </div>
+ 
+
+    
+                        <div id="con_3_products">
+                            <ul>
+                                <li class="con_3_products_wrap">
+                                    <div class="con_3_products_img">
+                                        <a href="chair_product"><img src="img/con_4_1.jpg" alt="SERIES 7™"></a>
+                                    </div>
+                                    <div class="con_3_products_text clearfix">
+                                        <span>SERIES 7™</span>
+                                        <span>MC300</span>
+                                    </div> 
+                                </li>
+    
+                                <!-- <li class="con_4_products_lines"></li> -->
+    
+                                <li class="con_3_products_wrap">
+                                    <div class="con_3_products_img">
+                                        <a href="chair_product"><img src="img/con_4_2.jpg" alt="N01™"></a>
+                                    </div>
+                                    <div class="con_3_products_text clearfix">
+                                        <span>N01™</span>
+                                        <span>MS11</span>
+                                    </div> 
+                                </li>
+    
+                                <!-- <li class="con_4_products_lines"></li> -->
+    
+                                <li class="con_3_products_wrap">
+                                    <div class="con_3_products_img">
+                                        <a href="chair_product"><img src="img/con_4_3.jpg" alt="ANT™"></a>
+                                    </div>
+                                    <div class="con_3_products_text clearfix">
+                                        <span>ANT™</span>
+                                        <span>PK61</span>
+                                    </div> 
+                                </li>
+    
+    
+                                <li class="con_3_products_wrap">
+                                    <div class="con_3_products_img">
+                                        <a href="chair_product"><img src="img/con_4_2_1.jpg" alt="NAP™"></a>
+                                    </div>
+                                    <div class="con_3_products_text clearfix">
+                                        <span>NAP™</span>
+                                        <span>KS50</span>
+                                    </div> 
+                                </li>
+    
+                                <!-- <li class="con_4_products_lines"></li> -->
+    
+                                <li class="con_3_products_wrap">
+                                    <div class="con_3_products_img">
+                                        <a href="chair_product"><img src="img/con_4_2_2.jpg" alt="NAP™"></a>
+                                    </div>
+                                    <div class="con_3_products_text clearfix">
+                                        <span>NAP™</span>
+                                        <span>KS62</span>
+                                    </div> 
+                                </li>
+    
+                                <!-- <li class="con_4_products_lines"></li> -->
+    
+                                <li class="con_3_products_wrap">
+                                    <div class="con_3_products_img">
+                                        <a href="chair_product"><img src="img/con_4_2_3.jpg" alt="PK9™"></a>
+                                    </div>
+                                    <div class="con_3_products_text clearfix">
+                                        <span>PK9™</span>
+                                        <span>PK9</span>
+                                    </div> 
+                                </li>
+    
+    
+                                <li class="con_3_products_wrap">
+                                    <div class="con_3_products_img">
+                                        <a href="chair_product"><img src="img/con_4_3_1.jpg" alt="PLANNER™"></a>
+                                    </div>
+                                    <div class="con_3_products_text clearfix">
+                                        <span>PLANNER™</span>
+                                        <span>MC300</span>
+                                    </div> 
+                                </li>
+                           
+                                <li class="con_3_products_wrap">
+                                    <div class="con_3_products_img">
+                                        <a href="chair_product"><img src="img/con_4_3_2.jpg" alt="STUB™"></a>
+                                    </div>
+                                    <div class="con_3_products_text clearfix">
+                                        <span>STUB™</span>
+                                        <span>MS11</span>
+                                    </div> 
+                                </li>
+                            
+
+                                <li class="con_3_products_wrap">
+                                    <div class="con_3_products_img">
+                                        <a href="chair_product"><img src="img/con_4_3_3.jpg" alt="SERIES 7™"></a>
+                                    </div>
+                                    <div class="con_3_products_text clearfix">
+                                        <span>SERIES 7™</span>
+                                        <span>MC300</span>
+                                    </div> 
+                                </li>
+                            </ul>
+ 
+                    </div>
+
+                     <!--con_4_product-->
+                </section> 
+                <!--con_4-->
+
+                
+            </div>
+              <!-- con_wrap -->
+
+            <footer>
+                <div id="footer_wrap">
+                    <div id="footer_upper" class="clearfix">
+                        <div id="footer_text">
+                            <span>CARE & SERVICES</span>
+                            <span>COMPANY</span>
+                            <span>PRESS</span>
+                            <span>FOLLOW US</span>
+                        </div>
+    
+                        <div id="footer_icons" class="clearfix">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div id="footer_line"></div>
+
+                    <div id="footer_info">
+                        <div id="footer_info_left">
+                            <span>서울시 종로구 삼청로 104 하우스 오브 프리츠한센 스토어 03053</span>
+                            <span>Tel: +82 2 720 0242</span>
+                        </div>
+
+                        <div id="footer_info_right">
+                            <span>프리츠 한세 개인정보 보호정책</span>
+                        </div>
+                    </div>
+                </div>
+            </footer> 
+
+          
+
+        
+
+        </div> 
+        <!-- "wrap_center" -->
+    </div>
+     <!-- "wrap" -->
+</body>
+</html>

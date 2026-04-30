@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> 
+    <title>Freitag by JOOYOUNG</title>
+    <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="jquery-3.6.0.min.js" type="text/javascript" text="javascript"></script>
+    <script src="js/main.js" type="text/javascript" text="javascript"></script>
+    <script src="dist/mixitup.min.js" type="text/javascript" text="javascript"></script>
+    <script>
+        $(function(){  
+            //get started button 밑에  creating a mixer
+            let mixer = mixitup('.mix_wrap',{
+                
+            "animation": {
+            "duration": 664,
+            "nudge": true,
+            "reverseOut": false,
+            "effects": "fade translateX(-69%) translateZ(23px) rotateX(180deg)"
+            }   //over view  -> animation option 원하는 애니메이션 만들어서 -> export cofig나오는 코딩을 그대로 붙이기. 
+
+
+            });
+
+            //selection 중에에서  id가 filter인 것. 
+ 
+            $("#filter").change(function(){   //selection filter는 기능을 바꾸자. 
+                 
+                let val=$(this).val();        //지금부터 너가 갖고 있는 valure를 val에 저장할 예정.
+
+                mixer.filter(val);            //믹서는 이제부터 val을 인수로 갖고 필터하여라.  filter는 함수 이름이로구나. 
+            });                               //믹서는 mixitup인것인데. 플러그인에서 저장된 함수인듯 한데....
+
+                
+
+
+            $("#sort").change(function(){
+                 
+                 let val=$(this).val();
+ 
+                 mixer.sort(val);
+             });
+  
+
+            
+
+             $("#filter_wrap button").click(function(){
+
+                $("#filter_wrap button").removeClass("on");
+                $(this).addClass("on");
+             });//button color changed
+        });//구문  닫닫기
+    </script>
+      
+
+ 
+</head>
+<body>
+    <div id="wrap">
+        <div id="wrap_center" class="clearfix">
+             <!-- header_wrap-->
+             <div id="header_wrap">
+                <header>
+                    <div id="logo">
+                        <h1><a href="../"><img src="img/logo.svg" alt="로고"></a></h1>
+                     </div>
+    
+    
+                    <div id="search_bar_menu" class="clearfix">
+                       
+                        
+                        <form>
+                            <div id="search_bar_wrap" class="clearfix">
+                                <input type="text" name="text"/>
+                                <button id="search_bar">
+                                    <img src="img/search_icon.svg" alt="검색돋보기">
+                                </button>
+                            </div>    
+                        </form>
+                        
+    
+                        <nav>
+                            <ul class="clearfix">
+                                <li class="menu"><span><a href="#">Bags</a></span></li>
+                          
+                                <li class="menu"><span><a href="../accessories">Accessories</a></span></li>
+                        
+                                <li class="menu"><span><a href="../our manifesto">Our Manifesto</a></span></li>
+                    
+                                <li class="menu"><span><a href="../history">History</a></span></li>
+
+                                <li class="menu"><span><a href="../production steps">Production Steps</a></span></li>
+                            </ul>
+                        </nav>
+                    
+                    </div> 
+                    <!--search_bar_menu-->
+                </header>
+             </div>
+             <!-- header_wrap-->
+
+            <section id="con_1">
+                <div id="con_1_wrap">
+                    <div id="con_1_fixed">
+                        <h2>Bags</h2>
+                        <div id="sort_filter_wrap" class="clearfix">
+                            <div id="filter_wrap">
+                                <button type="button" class="on" data-filter="all">All Bags</button>
+                                <button type="button" data-filter=".Backpacks">Backpacks</button>
+                                <button type="button" data-filter=".Messenger">Messenger</button>
+                                <button type="button" data-filter=".ToteBags">Tote Bags</button>
+                            </div>
+        
+                            
+                            <div id="sort_wrap">
+                                <label for="">Sort by : </label>
+                                <select name="" id="sort">
+                                    <option value="order:asc">From Low Price</option>
+                                    <option value="order:descending">From High Price</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <ul class="mix_wrap clearfix">
+                        <li class="mix Backpacks" data-order="346,000">
+                            <a href="bags_product">
+                                <img src="img/con_1.jpg" alt="F49 FRINGE">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F49 FRINGE</h3>
+                                    <span class="price">₩ 346,000</span>
+                                </span>
+                                <span class="heart on"></span>
+                            </div>   
+                        </li>
+
+                        <li class="mix Backpacks" data-order="288,000">
+                            <a href="bags_product">
+                                <img src="img/con_2.jpg" alt="F201 PETE">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F201 PETE</h3>
+                                    <span class="price">₩ 288,000</span>
+                                </span>
+                                <span class="heart liked"></span>
+                            </div>
+                        </li>
+
+                        <li class="mix Messenger" data-order="346,000">
+                            <a href="bags_product">
+                                <img src="img/con_3.jpg" alt="F201 PETE">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F12 DRAGNET</h3>
+                                    <span class="price">₩ 346,000</span>
+                                </span>
+                                <span class="heart"></span>
+                            </div>
+                        </li>
+
+                        <li class="mix Backpacks" data-order="346,000">
+                            <a href="bags_product">
+                                <img src="img/con_4.jpg" alt="F201 PETE">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F600 CARTER</h3>
+                                    <span class="price">₩ 346,000</span>
+                                </span>
+                                <span class="heart on"></span>
+                            </div>
+                        </li>
+
+                        <li class="mix Backpacks" data-order="248,000">
+                            <a href="bags_product">
+                                <img src="img/con_5.jpg" alt="F201 PETE">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F707 STRATOS</h3>
+                                    <span class="price">₩ 248,000</span>
+                                </span>
+                                <span class="heart"></span>
+                            </div>
+                        </li>
+
+                        <li class="mix Backpacks" data-order="288,000">
+                            <a href="bags_product">
+                                <img src="img/con_6.jpg" alt="F253 KOWALSKI">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F253 KOWALSKI</h3>
+                                    <span class="price">₩ 288,000</span>
+                                </span>
+                                <span class="heart"></span>
+                            </div>
+                        </li>
+
+                        <li class="mix Backpacks" data-order="446,000">
+                            <a href="bags_product">
+                                <img src="img/con_7.jpg" alt="F253 KOWALSKI">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F306 HAZZARD</h3>
+                                    <span class="price">₩ 446,000</span>
+                                </span>
+                                <span class="heart liked"></span>
+                            </div>
+                        </li>
+
+                        <li class="mix Backpacks" data-order="468,000">
+                            <a href="bags_product">
+                                <img src="img/con_8.jpg" alt="F253 KOWALSKI">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F512 VOYAGER</h3>
+                                    <span class="price">₩ 468,000</span>
+                                </span>
+                                <span class="heart on"></span>
+                            </div>
+                        </li>
+
+                        <li class="mix Messenger" data-order="346,000">
+                            <a href="bags_product">
+                                <img src="img/con_9.jpg" alt="F253 KOWALSKI">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F13 TOP CAT</h3>
+                                    <span class="price">₩ 346,000</span>
+                                </span>
+                                <span class="heart liked"></span>
+                            </div>
+                        </li>
+
+                        <li class="mix Messenger" data-order="346,000">
+                            <a href="bags_product">
+                                <img src="img/con_10.jpg" alt="F253 KOWALSKI">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F12 DRAGNET</h3>
+                                    <span class="price">₩ 346,000</span>
+                                </span>
+                                <span class="heart"></span>
+                            </div>
+                        </li>
+
+                        <li class="mix Messenger" data-order="288,000">
+                            <a href="bags_product">
+                                <img src="img/con_11.jpg" alt="F253 KOWALSKI">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F11 LASSIE</h3>
+                                    <span class="price">₩ 288,000</span>
+                                </span>
+                                <span class="heart"></span>
+                            </div>
+                        </li>
+
+                        <li class="mix Messenger" data-order="186,000">
+                            <a href="bags_product">
+                                <img src="img/con_12.jpg" alt="F253 KOWALSKI">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F40 JAMIE</h3>
+                                    <span class="price">₩ 186,000</span>
+                                </span>
+                                <span class="heart"></span>
+                            </div>
+                        </li>
+
+                        <li class="mix Messenger" data-order="198,000">
+                            <a href="bags_product">
+                                <img src="img/con_13.jpg" alt="F41 HAWAII FIVE-O">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F41 HAWAII FIVE-O</h3>
+                                    <span class="price">₩ 198,000</span>
+                                </span>
+                                <span class="heart on"></span>
+                            </div>
+                        </li>
+
+                        <li class="mix ToteBags" data-order="322,000">
+                            <a href="bags_product">
+                                <img src="img/con_14.jpg" alt="F41 HAWAII FIVE-O">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F560 STERLING</h3>
+                                    <span class="price">₩ 322,000</span>
+                                </span>
+                                <span class="heart liked"></span>
+                            </div>
+                        </li>
+
+                        <li class="mix ToteBags" data-order="158,000">
+                            <a href="bags_product">
+                                <img src="img/con_15.jpg" alt="F41 HAWAII FIVE-O">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F52 MIAMI VICE</h3>
+                                    <span class="price">₩ 158,000</span>
+                                </span>
+                                <span class="heart liked"></span>
+                            </div>     
+                        </li>
+
+                        <li class="mix ToteBags" data-order="322,000">
+                            <a href="bags_product">
+                                <img src="img/con_16.jpg" alt="F41 HAWAII FIVE-O">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F203 BOB</h3>
+                                    <span class="price">₩ 322,000</span>
+                                </span>
+                                <span class="heart"></span>
+                            </div>
+                        </li>
+
+                        <li class="mix ToteBags" data-order="248,000">
+                            <a href="bags_product">
+                                <img src="img/con_17.jpg" alt="F41 HAWAII FIVE-O">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F620 DAVIAN</h3>
+                                    <span class="price">₩ 248,000</span>
+                                </span>
+                                <span class="heart liked"></span>
+                            </div> 
+                        </li>
+
+                        <li class="mix ToteBags" data-order="322,000">
+                            <a href="bags_product">
+                                <img src="img/con_18.jpg" alt="F41 HAWAII FIVE-O">
+                            </a>
+                            <div class="product_info clearfix">
+                                <span class="text_box">
+                                    <h3>F45 LOIS</h3>
+                                    <span class="price">₩322,000</span>
+                                </span>
+                                <span class="heart"></span>
+                            </div>  
+                        </li>
+                         
+                         
+                
+                <!-- con_1_wrap -->
+            </section>
+             
+                
+            <footer>
+                <div id="footer_upper">
+                    <div id="footer_upper_text_box">
+                        <h3>Todays,</h3>
+                        <h4>
+                            프라이탁은 성숙해졌으며 세련되고 활기찬 대도시로 취리히와 동의어입니다. <br/>
+                            프라이탁은 혁신, 창의성 및 환경 인식을 의미합니다. 그러나 그것은 또 다른 이야기, 앞으로의 프라이탁이야기로 더 풍성해 질 것입니다.  
+                        </h4>
+                    </div>
+                </div>
+                <!--footer_upper-->
+
+                <div id="footer_bottom">
+                    <div id="footer_bottom_wrap" class="clearfix">
+                        <div id="footer_bottom_left">
+                            <span>Becaues Future Needs More Creativity.</span>
+                        </div>
+                        <div id="footer_bottom_right" class="clearfix">
+                            <div class="footer_bottom_right_text_box">
+                                <span class="footer_bottom_right_text_box_header">
+                                    Freitag.com 
+                                </span>
+                                <span class="footer_bottom_right_text_box_contents">
+                                    Bag<br/>
+                                    Accessaries<br/>
+                                    Our Manifesto<br/>
+                                    History<br/>
+                                    Production Steps
+                                </span>
+                            </div>
+
+                            <div class="footer_bottom_right_text_box">
+                                <span class="footer_bottom_right_text_box_header">
+                                    Online Service                                                  
+                                </span>
+                                <span class="footer_bottom_right_text_box_contents">
+                                    Payment Methods<br/>
+                                    Shipping Options<br/>
+                                    My Account<br/>
+                                    Returns<br/>
+                                    Care & Services<br/>
+                                    FAQ
+                                </span>
+                            </div>
+
+                            <div class="footer_bottom_right_text_box">
+                                <span class="footer_bottom_right_text_box_header">
+                                    The Studio of Freitag                                                 
+                                </span>
+                                <span class="footer_bottom_right_text_box_contents">
+                                    Career<br/>
+                                    Data Protection<br/>
+                                    General Terms and Condition<br/>
+                                    Copyright<br/>
+                                    Imprint<br/>
+                                </span>
+                            </div>
+                        </div>
+                    </div> 
+                    <!--footer_bottom_wrap-->   
+                </div> 
+                 <!--footer_bottom-->
+
+
+                <div id="footer_info">
+                    <div id="footer_ip">
+                        @ Freitag 2022
+                    </div>
+                    <div id="footer_sns" class="clearfix">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div> 
+            </footer> 
+            <!--footer-->
+        </div> 
+        <!-- "wrap_center" -->
+    </div>
+    <!-- "wrap" -->
+</body>
+</html>

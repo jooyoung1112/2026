@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> 
+    <title>Friz Hansen by JOOYOUNG</title> 
+    <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+    <link href="dist/jquery.bxslider.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">   
+    <style type="text/css">
+        @font-face {font-family: "Hansen Grotesque";
+          src: url("1e8f3e91ec75b968da52ba69cc3be114.eot"); /* IE9*/
+          src: url("1e8f3e91ec75b968da52ba69cc3be114.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+          url("1e8f3e91ec75b968da52ba69cc3be114.woff2") format("woff2"), /* chrome、firefox */
+          url("1e8f3e91ec75b968da52ba69cc3be114.woff") format("woff"), /* chrome、firefox */
+          url("1e8f3e91ec75b968da52ba69cc3be114.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+          url("1e8f3e91ec75b968da52ba69cc3be114.svg#Hansen Grotesque") format("svg"); /* iOS 4.1- */
+        }
+    </style>
+ <script src="jquery-3.6.0.min.js" type="text/javascript" text="javascript"></script>
+ <script src="js/main.js" type="text/javascript" text="javascript"></script> 
+ <script src="dist/jquery.bxslider.min.js" type="text/javascript" text="javascript"></script>
+
+    <script>
+	 $(function(){
+
+			$('.slide').bxSlider({
+				  auto: false,
+				  autoControls: false,   //오른쪽 하단에 있는 동영상모양의 아이콘. 쓰기 싫으면 지우면 됨. 
+				  stopAutoOnClick: false, //좌우 버튼을 클릭하여 사진을 넘기면 넘겨진 사진만 보여지게되며  auto가 멈추게된다. 
+				  pager: false,  //img tag에서 title=""이 사진에 마우스를 대면 마우스 하단에 꼬리표처럼 보여짐. 사진 부연설명이 목적.
+				  slideWidth: 965
+			});
+
+		}); //구문닫기
+	</script>
+ 
+</head>
+<body>
+    <div id="wrap">
+        <div id="wrap_center">
+             <header>
+                <div id="header_wrap" class="clearfix" >
+                   <div id="logo_wrap">
+                       <div id="logo">
+                          <h1><a href="../"><img src="../img/logo.svg" alt="프리츠 한세 로고"></a></h1>
+                       </div>
+                  </div>
+                  
+                  <div id="menu_wrap">     
+                       <ul id="menu" class="clearfix">
+                           <li class="menu_item">
+                              <span>PRODUCT</span>
+                           </li>
+                           <li class="menu_item">
+                              <span>INSPIRATION</span>
+                          </li>
+                          <li class="menu_item">
+                              <span><a href="../about_us">ABOUT US</a></span>
+                          </li>
+                          <li class="menu_item">
+                              <span><a href="#">DESIGNERS</a></span>
+                          </li>
+                          <li class="menu_item">
+                              <span>NEWSLETTER</span>
+                          </li>
+                          <li class="menu_item">
+                              <span>EN/KOR</span>
+                          </li>
+                          <li class="menu_item search_icon">
+                               <span><img src="../img/new_search_bar_2.svg" alt="검색  아이콘"></span> 
+                          </li>
+                       </ul>
+                  </div>
+
+                </div>
+             </header>
+             <!-- header-->
+
+
+             <!-- nav -->
+             <nav> 
+               <div id="sub_menu_wrap">
+                   <ul id="sub_menu"  class="clearfix">
+                       <li class="sub_menu_item">
+                           <div><a href="../chair">CHAIR</a></div>
+                           <div><a href="../sofa">SOFA</a></div>
+                           <div><a href="../table">TABLE</a></div>
+                       </li>
+   
+                       <li class="sub_menu_item">
+                           <div><a href="../new_colors">NEW COLORS</a></div>
+                           <div><a href="../7_cool_architect">7 COOL ARCHITECT</a></div>
+                      </li> 
+
+                      <li class="sub_menu_item">
+                           <form class="clearfix" action="">
+                               <input type="text" name="newsletter_emailaddress" value="ENTER YOUR EMAIL ADDRESS">
+                               <button>OK</button>
+                           </form>
+                      </li>
+
+                      <li class="sub_menu_item">
+                           <form class="clearfix" action="">
+                               <input type="text" name="search_bar" value="">
+                               <button>SEARCH</button>
+                           </form>
+                  </li>
+                   </ul>
+               </div>
+             </nav>  
+             <!-- con_wrap -->
+             <div id="con_wrap">
+                <!--con_1-->
+                <section id="con_1">
+                    <div class="con_video_wrap">
+                        <video autoplay loop muted>
+                           <source src="img/con_1.mp4" alt="프리츠한센 디자이너">
+                        </video>
+                    </div>
+                </section>
+                <!--con_1-->
+
+
+                 <!--con_2-->
+                <section id="con_2">
+                    <div id="con_2_wrap">
+                        <div id="con_2_heading">
+                            <h2>
+                                Arne Jacobsen
+                            </h2>
+                            <p>
+                                디자인계의 선구자이자 에그™, 스완™, 시리즈 7™, 앤트™, 그리고 드롭™ 체어를 포함한 많은 혁신적인 작품의 제작자
+                            </p>
+                        </div>
+
+                        <ul id="con_2_contents" class="clearfix">
+                            <li><img src="img/con_2_1.jpg" alt="아르네 자콥센의 사진"></li>
+                            <li>
+                                <img src="img/con_2_2.jpg" alt="벨라 비스타">
+                                <h3>벨라 비스타<span class="en">(BELLA VISTA)<br/>
+                                    1934</span></h3>
+                                <p>
+                                    벨라 비스타 주택 단지는 1931년부터 1934년까지 아르네 야콥센이 작업한 결과물입니다. 벨라 비스타라는 이름은 그 자리에 있던 벨라 비스타 빌라에서 따온 것입니다.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="img/con_2_3.jpg" alt="아르센 아콥센의 작품">
+                                <h3><span class="en">THE WORK</span></h3>
+                                <p>
+                                    보기와는 달리 야콥센은 디자인에서 그가 원했던 것이 무엇인지 빨리 알지 못했습니다. 또한 야콥센은 건축업자의 일반적인 이미지와 다르게 자신감 있는 사람과는 거리가 멀었습니다. 기본적인 아이디어와 비율에 대한 탁월한 감각과 디자인 및 형태에 대한 남다른 재능 외에는 어떤 것도 결정된 것이 없었습니다. 따라서 야콥센은 종종 불안정한 디자이너로 인식되었고, 사실상 그는 디자인 아이디어, 기술, 소재의 외부적 한계에 직관적으로 부딪히는 편이었습니다.
+                                </p>
+                            </li>
+                        </ul>                
+                    </div>
+                </section>
+
+                <!--con_3-->
+                <section id="con_3">
+                    <div id="con_3_text_box">
+                    
+                        <h3>
+                            Arne Jacobsen
+                        </h3>
+                        <h4>
+                            디자인계의 반항아 아르네 야콥센 
+                        </h4>
+                        <p>
+                            코펜하겐에서 유년 시절을 보낸 아르네 야콥센에게는 유명한 일화가 있습니다. 어린 시절 빅토리아 양식으로 장식되었던 침실 벽지를 새로 페인트칠했다고 합니다. <br/>
+                            그는 평범한 어린이용 드로잉이나 남자아이들이 좋아하는 블루 컬러로 장식된 벽지가 아닌, 침실 벽 전체를 화이트로 칠했습니다. <br/>
+                            
+                            오늘날에는 평범해 보일 수 있지만, 20세기 초였던 당시에 화이트 컬러의 벽은 매우 신선한 선택이었습니다. 이처럼 아르네 야콥센은 매우 어릴 때부터 시대를 앞서갔음을 짐작할 수 있습니다. <br/>
+                            
+                            20세기 중반 그 이후까지, 아르네 야콥센의 혁신적인 아이디어는 덴마크 디자인의 지평을 넓혔습니다. 스칸디나비아반도에 큰 반향을 불러일으킨 그의 디자인은 전 세계 건축가와 디자이너들에게 영향을 미칩니다. <br/>
+                            
+                            아르네 야콥센의 창의적인 디자인 과정 그 중심에는 디테일을 향한 집요함이 자리 잡고 있습니다. 그는 후원자와 건축가들에게 직접 꼼꼼하게 페인팅한 수채화를 선보이며 그가 품은 비전을 제시하였습니다. <br/>
+                            다른 디자이너들에게는 5년이라는 시간도 부족할 만한 프로젝트를 1년 만에 완성한 아르네 야콥센은 가히 천재적인 예술가라 할 수 있습니다.  <br/>
+                        </p>
+                    </div>
+
+                </section>
+                <!--con_3-->
+
+                <!--con_5-->
+                <section id="con_5">
+                   <div id="con_5_wrap">
+                        <div id="con_5_title" class="clearfix">
+                            <div id="con_5_title_left">
+                                <h4>
+                                    프리츠 한센의 디자이너들
+                                </h4>
+                            </div>
+
+                            <div id="con_5_title_right">
+                                <a href="#">
+                                    <span>MORE</span>
+                                    <span>EXPLORE</span>
+                                    
+                                    
+                                    <div id="con_5_title_right_arrow">
+                                        <img src="img/arrow_black.svg" alt="화살표">   
+                                    </div>  
+                                </a>
+                            </div> 
+
+                        </div>
+                        <!--con_5-_title-->
+                        <!--con_5-_contents-->
+                        <div id="con_5_contents">
+                            <ul class="clearfix">
+                                <li>
+                                    <img src="img/con_3_1.jpg" alt="AHM & LUND"> 
+                                    <div class="con_5_contents_text">
+                                        <span>AHM & LUND</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="img/con_3_2.jpg" alt="ARNE JACOBSEN<">
+                                    <div class="con_5_contents_hover">
+                                        <div class="con_5_contents_hoever_background"></div>
+                                        <div class="con_5_contents_text">
+                                            <span>ARNE JACOBSEN</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="img/con_3_5.jpg" alt="ANNE QVIST">
+                                    <div class="con_5_contents_hover">
+                                        <div class="con_5_contents_hoever_background"></div>
+                                        <div class="con_5_contents_text">
+                                            <span>ANNE QVIST</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="img/con_3_4.jpg" alt="BENJAMIN HUBERT">
+                                    <div class="con_5_contents_hover">
+                                        <div class="con_5_contents_hoever_background"></div>
+                                        <div class="con_5_contents_text">
+                                            <span>BENJAMIN HUBERT</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="img/con_3_3.jpg" alt="BODIL KJAER">
+                                    <div class="con_5_contents_hover">
+                                        <div class="con_5_contents_hoever_background"></div>
+                                        <div class="con_5_contents_text">
+                                            <span>BODIL KJAER</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="img/con_3_6.jpg" alt="BRUNO MATHSSON">
+                                    <div class="con_5_contents_hover">
+                                        <div class="con_5_contents_hoever_background"></div>
+                                        <div class="con_5_contents_text">
+                                            <span>BRUNO MATHSSON</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- <ul class="clearfix">
+                                <li>
+                                    <img src="img/con_3_1.jpg" alt=""> 
+                                    <div class="con_5_contents_text">
+                                        <span>새로운 시작!!</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="img/con_3_2.jpg" alt="">
+                                    <div class="con_5_contents_hover">
+                                        <div class="con_5_contents_hoever_background"></div>
+                                        <div class="con_5_contents_text">
+                                            <span>ARNE JACOBSEN</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="img/con_3_5.jpg" alt="">
+                                    <div class="con_5_contents_hover">
+                                        <div class="con_5_contents_hoever_background"></div>
+                                        <div class="con_5_contents_text">
+                                            <span>ANNE QVIST</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="img/con_3_4.jpg" alt="">
+                                    <div class="con_5_contents_hover">
+                                        <div class="con_5_contents_hoever_background"></div>
+                                        <div class="con_5_contents_text">
+                                            <span>BENJAMIN HUBERT</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="img/con_3_3.jpg" alt="">
+                                    <div class="con_5_contents_hover">
+                                        <div class="con_5_contents_hoever_background"></div>
+                                        <div class="con_5_contents_text">
+                                            <span>BODIL KJAER</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="img/con_3_6.jpg" alt="">
+                                    <div class="con_5_contents_hover">
+                                        <div class="con_5_contents_hoever_background"></div>
+                                        <div class="con_5_contents_text">
+                                            <span>BRUNO MATHSSON</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul> -->
+                        </div>
+                        <!--con_5-_contents-->
+                   </div>
+                </section>
+                 <!--con_5-->
+
+             </div>
+            <!-- con_wrap -->
+
+
+            <!-- footer -->
+            <footer>
+                <div id="footer_wrap">
+                    <div id="footer_upper" class="clearfix">
+                        <div id="footer_text">
+                            <span>CARE & SERVICES</span>
+                            <span>COMPANY</span>
+                            <span>PRESS</span>
+                            <span>FOLLOW US</span>
+                        </div>
+    
+                        <div id="footer_icons" class="clearfix">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div id="footer_line"></div>
+
+                    <div id="footer_info">
+                        <div id="footer_info_left">
+                            <span>서울시 종로구 삼청로 104 하우스 오브 프리츠한센 스토어 03053</span>
+                            <span>Tel: +82 2 720 0242</span>
+                        </div>
+
+                        <div id="footer_info_right">
+                            <span>프리츠 한세 개인정보 보호정책</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- footer -->
+
+        
+
+        </div> 
+        <!-- "wrap_center" -->
+    </div>
+     <!-- "wrap" -->
+</body>
+</html>

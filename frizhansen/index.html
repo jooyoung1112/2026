@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> 
+    <title>Friz Hansen by JOOYOUNG</title> 
+    <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+    <link href="dist/jquery.bxslider.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        @font-face {font-family: "Hansen Grotesque";
+          src: url("1e8f3e91ec75b968da52ba69cc3be114.eot"); /* IE9*/
+          src: url("1e8f3e91ec75b968da52ba69cc3be114.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+          url("1e8f3e91ec75b968da52ba69cc3be114.woff2") format("woff2"), /* chrome、firefox */
+          url("1e8f3e91ec75b968da52ba69cc3be114.woff") format("woff"), /* chrome、firefox */
+          url("1e8f3e91ec75b968da52ba69cc3be114.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+          url("1e8f3e91ec75b968da52ba69cc3be114.svg#Hansen Grotesque") format("svg"); /* iOS 4.1- */
+        }
+   
+    </style>
+    <script src="jquery-3.6.0.min.js" type="text/javascript" text="javascript"></script>
+    <script src="js/main.js" type="text/javascript" text="javascript"></script> 
+    <script src="dist/jquery.bxslider.min.js" type="text/javascript" text="javascript"></script>
+    <script src="dist/vendor/jquery.fitvids.js" type="text/javascript" text="javascript"></script>
+    <script>
+     $(function(){      
+         
+                        // 3rd section slider
+                        $('.con_3_slide').bxSlider({
+                                auto: true,
+                                autoControls: false,   //오른쪽 하단에 있는 동영상모양의 아이콘. 쓰기 싫으면 지우면 됨. 
+                                stopAutoOnClick: false, //좌우 버튼을 클릭하여 사진을 넘기면 넘겨진 사진만 보여지게되며  auto가 멈추게된다. 
+                                pager: true,  //img tag에서 title=""이 사진에 마우스를 대면 마우스 하단에 꼬리표처럼 보여짐. 사진 부연설명이 목적.
+                                slideWidth: 1600
+                        });
+
+                        // 1st section slider
+                            $('.con_1_slide').bxSlider({
+                                video: true,
+                                auto: false,
+                                autoControls: false,   //오른쪽 하단에 있는 동영상모양의 아이콘. 쓰기 싫으면 지우면 됨. 
+                                stopAutoOnClick: false, //좌우 버튼을 클릭하여 사진을 넘기면 넘겨진 사진만 보여지게되며  auto가 멈추게된다. 
+                                pager: true,  //img tag에서 title=""이 사진에 마우스를 대면 마우스 하단에 꼬리표처럼 보여짐. 사진 부연설명이 목적.
+                                slideWidth: 1600
+                        });
+
+
+     });//$function구문닫기
+    </script>
+  
+</head>
+<body>
+    <div id="wrap">
+        <div id="wrap_center">
+             <!-- header -->
+             <header>
+                 <div id="header_wrap" class="clearfix" >
+                    <div id="logo_wrap">
+                        <div id="logo">
+                           <h1><a href="#"><img src="img/logo.svg" alt="프리츠 한세 로고"></a></h1>
+                        </div>
+                   </div>
+                   
+                   <div id="menu_wrap">     
+                        <ul id="menu" class="clearfix">
+                            <li class="menu_item">
+                               <span>PRODUCT</span>
+                            </li>
+                            <li class="menu_item">
+                               <span>INSPIRATION</span>
+                           </li>
+                           <li class="menu_item">
+                               <span><a href="about_us">ABOUT US</a></span>
+                           </li>
+                           <li class="menu_item">
+                               <span><a href="designers">DESIGNERS</a></span>
+                           </li>
+                           <li class="menu_item">
+                               <span>NEWSLETTER</span>
+                           </li>
+                           <li class="menu_item">
+                               <span>EN/KOR</span>
+                           </li>
+                           <li class="menu_item search_icon">
+                                <span><img src="img/new_search_bar_2.svg" alt="검색  아이콘"></span> 
+                           </li>
+                        </ul>
+                   </div>
+
+                 </div>
+            </header>
+             <!-- header-->
+
+
+             <!-- nav -->
+            <nav> 
+                <div id="sub_menu_wrap">
+                    <ul id="sub_menu"  class="clearfix">
+                        <li class="sub_menu_item">
+                            <div><a href="chair">CHAIR</a></div>
+                            <div><a href="sofa">SOFA</a></div>
+                            <div><a href="table">TABLE</a></div>
+                        </li>
+    
+                        <li class="sub_menu_item">
+                            <div><a href="new_colors">NEW COLORS</a></div>
+                            <div><a href="7_cool_architect">7 COOL ARCHITECT</a></div>
+                       </li> 
+
+                       <li class="sub_menu_item">
+                            <form class="clearfix" action="">
+                                <input type="text" name="newsletter_emailaddress" value="ENTER YOUR EMAIL ADDRESS">
+                                <button>OK</button>
+                            </form>
+                       </li>
+
+                       <li class="sub_menu_item">
+                            <form class="clearfix" action="">
+                                <input type="text" name="search_bar" value="">
+                                <button>SEARCH</button>
+                            </form>
+                   </li>
+                    </ul>
+                </div>
+            </nav>  
+
+             <!-- con_wrap -->
+            <div id="con_wrap">
+                <!--con_1-->
+                <section id="con_1">
+                    <ul class="con_1_slide">
+                        <li>
+                            <div class="con_video_wrap">
+                                <video autoplay loop muted>
+                                   <source src="img/con_1_1.mp4" alt="새로운 색상">
+                                </video>
+                            </div>
+                            <div class="con_1_text_box">
+                                <h2><a href="new_colors">새로운 16가지 색상 팔레트</a></h2>
+                                <h3><a href="new_colors">A SENSE OF COLOR</a></h3>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="con_video_wrap">
+                                <a href="about_us">
+                                     <video autoplay loop muted>
+                                         <source src="img/con_1_2.mp4" alt="150년의 역사">
+                                     </video>
+                                </a>
+                             </div>
+                             <!-- <div class="con_1_text_box">
+                                 <h2><a href=""></a></h2>
+                                 <h3><a href=""></a></h3>
+                             </div> -->
+                        </li>
+
+                        <li>
+                            <div class="con_video_wrap">
+                                <video autoplay loop muted>
+                                   <source src="img/con_1_3.mp4" alt="디자이너 아르센 자쿠센">
+                                </video> 
+                            </div>
+                            <div class="con_1_text_box">
+                                <h2><a href="designers">디자이너 아르센 자쿱센의 이야기</a></h2>
+                                <h3><a href="designers">ARNE JACOBSEN</a></h3>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="con_video_wrap">
+                                <video autoplay loop muted>
+                                   <source src="img/con_1_4.mp4" alt="프리츠 한센 쇼파">
+                                </video> 
+                            </div>
+                            <div class="con_1_text_box">
+                                <h2><a href="chair">프리츠 한센이 보여주는 공간 디자인</a></h2>
+                                <h3><a href="chair">NEW EVERYDAY LIFE</a></h3>
+                            </div>
+                        </li>
+
+                        <li>
+                             <div class="con_video_wrap">
+                                <video autoplay loop muted>
+                                    <source src="img/con_1_5.mp4" alt="7명의 건축가">
+                                </video> 
+                                </div>
+                                <div class="con_1_text_box">
+                                    <h2><a href="7_cool_architect">7명의 건축가와 체어 시리즈 7</a></h2>
+                                    <h3><a href="7_cool_architect">7 COOL ARCHITECTS</a></h3>
+                                </div>
+                        </li>
+                    </ul>
+                </section>
+                <!--con_1-->
+
+                <!--con_2 -->
+                <section id="con_2">
+                    <h2>“프리츠 한센은 시간을 초월하는 컬렉션을 선보이는 인터내셔널 디자인 브랜드입니다.”</h2>
+                </section> 
+                 <!--con_2 -->
+
+                <!--con_3-->
+                <section id="con_3">
+                    <ul class="con_3_slide">
+                        <li>
+                            <img src="img/con_3_1.jpg" alt="체어">
+                            <div class="con_3_text_box">
+                                <h2><a href="chair">DINING ROOM</a></h2>
+                                <div class="con_3_text_box_arrow clearfix">
+                                    <div>
+                                         <a href="chair"></a>
+                                    </div>  
+                                    <span><a href="chair">자세히 보기</a></span>
+                                </div>    
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/con_3_2.jpg" alt="리빙룸">
+                            <div class="con_3_text_box">
+                                <h2><a href="sofa">LIVING ROOM</a></h2>
+                                <div class="con_3_text_box_arrow clearfix">
+                                    <div>
+                                         <a href="sofa"></a>
+                                    </div>  
+                                    <span><a href="sofa">자세히 보기</a></span>
+                                </div>    
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/con_3_4.jpg" alt="홈 오피스">
+                            <div class="con_3_text_box">
+                                <h2><a href="table">HOME OFFICE</a></h2>
+                                <div class="con_3_text_box_arrow clearfix">
+                                    <div>
+                                         <a href="table"></a>
+                                    </div>  
+                                    <span><a href="table">자세히 보기</a></span>
+                                </div>    
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/con_3_5.jpg" alt="다이닝 룸">
+                            <div class="con_3_text_box">
+                                <h2><a href="table">DINING ROOM</a></h2>
+                                <div class="con_3_text_box_arrow clearfix">
+                                    <div>
+                                         <a href="table"></a>
+                                    </div>  
+                                    <span><a href="table">자세히 보기</a></span>
+                                </div>    
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/con_3_3.jpg" alt="침실">
+                            <div class="con_3_text_box">
+                                <h2><a href="sofa">BED ROOM</a></h2>
+                                <div class="con_3_text_box_arrow clearfix">
+                                    <div>
+                                         <a href="sofa"></a>
+                                    </div>  
+                                    <span><a href="sofa">자세히 보기</a></span>
+                                </div>    
+                            </div>
+                        </li>
+                    </ul>
+
+                </section>
+                <!--con_3-->
+
+                <!--con_4-->
+                <section id="con_4">
+                    <div id="con_4_wrap">
+                        <div id="con_4_title" class="clearfix">
+                            <div id="con_4_title_left">
+                                <h5>
+                                    카테고리별 제품 살펴보기
+                                </h5>
+                            </div>
+    
+                            <div id="con_4_title_right">
+                               <a href="chair/">
+                                <span>MORE</span>
+                                <span>PRODUCT</span>
+                                 
+                                
+                                <button id="con_4_title_right_arrow">
+                                    <img src="img/arrow_black.svg" alt="화살표">   
+                                </button>  
+                               </a>
+                            </div> 
+    
+                        </div>
+                        <!--con_4_title-->
+    
+                        <div id="con_4_products">
+                            <ul class="clearfix">
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="chair/"><img src="img/con_4_1.jpg" alt="SERIES 7™"></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>SERIES 7™</span>
+                                        <span>MC300</span>
+                                    </div> 
+                                </li>
+    
+                                <!-- <li class="con_4_products_lines"></li> -->
+    
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="chair/"><img src="img/con_4_2.jpg" alt="N01™"></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>N01™</span>
+                                        <span>MS11</span>
+                                    </div> 
+                                </li>
+    
+                                <!-- <li class="con_4_products_lines"></li> -->
+    
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="chair/"><img src="img/con_4_3.jpg" alt="ANT™"></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>ANT™</span>
+                                        <span>PK61</span>
+                                    </div> 
+                                </li>
+    
+    
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="sofa/"><img src="img/con_4_4.jpg" alt="LISSONI™ SOFA"></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>LISSONI™ SOFA</span>
+                                        <span>MC300</span>
+                                    </div> 
+                                </li>    
+
+    
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="sofa/"><img src="img/con_4_5.jpg" alt="SERIES 3300™"></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>SERIES 3300™</span>
+                                        <span>MS11</span>
+                                    </div> 
+                                </li>
+    
+
+    
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="sofa/"><img src="img/con_4_6.jpg" alt="SWAN™ SOFA"></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>SWAN™ SOFA</span>
+                                        <span>PK61</span>
+                                    </div> 
+                                </li>
+    
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="table/"><img src="img/con_4_7.jpg" alt="PLANNER™"></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>PLANNER™</span>
+                                        <span>MC300</span>
+                                    </div> 
+                                </li>
+                           
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="table/"><img src="img/con_4_8.jpg" alt="STUB™"></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>STUB™</span>
+                                        <span>MS11</span>
+                                    </div> 
+                                </li>
+                            
+
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="table/"><img src="img/con_4_9.jpg" alt="PK61™"></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>PK61™</span>
+                                        <span>PK61</span>
+                                    </div> 
+                                </li>
+                            </ul>
+                            
+                            <!--------------2nd slider ------------>
+                            <!-- <ul class="clearfix">
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="chair/"><img src="img/con_4_2_1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>NAP™</span>
+                                        <span>KS50</span>
+                                    </div> 
+                                </li>
+    
+                                <!-- <li class="con_4_products_lines"></li> -->
+    
+                                <!-- <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="chair/"><img src="img/con_4_2_2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>NAP™</span>
+                                        <span>KS62</span>
+                                    </div> 
+                                </li> -->
+    
+                                <!-- <li class="con_4_products_lines"></li> -->
+    
+                                <!-- <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="chair/"><img src="img/con_4_2_3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>PK9™</span>
+                                        <span>PK9</span>
+                                    </div> 
+                                </li>
+    
+    
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="sofa/"><img src="img/con_4_2_4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>SERIES 3300™</span>
+                                        <span>3303</span>
+                                    </div> 
+                                </li>    
+
+    
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="sofa/"><img src="img/con_4_2_5.jpg" alt=""></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>LISSONI™ SOFA</span>
+                                        <span>PL113S</span>
+                                    </div> 
+                                </li>
+    
+
+    
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="sofa/"><img src="img/con_4_2_6.jpg" alt=""></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>RO™ SOFA</span>
+                                        <span>JH210</span>
+                                    </div> 
+                                </li>
+    
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="table/"><img src="img/con_4_2_7.jpg" alt=""></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>PK71™</span>
+                                        <span>PK71</span>
+                                    </div> 
+                                </li>
+                           
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="table/"><img src="img/con_4_2_9.jpg" alt=""></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>JOIN™</span>
+                                        <span>FH41</span>
+                                    </div> 
+                                </li>
+                            
+
+                                <li class="con_4_products_wrap">
+                                    <div class="con_4_products_img">
+                                        <a href="table/"><img src="img/con_4_2_8.jpg" alt=""></a>
+                                    </div>
+                                    <div class="con_4_products_text clearfix">
+                                        <span>ANALOG™</span>
+                                        <span>JH43</span>
+                                    </div> 
+                                </li> -->
+                            <!-- </ul> -->
+
+                    </div>
+
+                     <!--con_4_product-->
+                </section> 
+                <!--con_4-->
+
+
+                <!--con_5-->
+                <section id="con_5">
+                    <div id="con_5_wrap">
+                        <div id="con_5_title">
+                            <div id="con_5_title_right">
+                                <span>MORE</span>
+                                <span>INSPIRATION</span>
+                                 
+                                <div id="con_5_title_right_arrow">
+                                    <img src="img/arrow_black.svg" alt="화살표">   
+                                </div>  
+                            </div> 
+                        </div>
+                        <!--con_5_title-->
+    
+                        <ul id="con_5_img_wrap" class="clearfix">
+                            <li>
+                                <img src="img/con_5_1_!.jpg" alt="크라우세 게이트 센터">
+                                <div id="con_5_text" class="clearfix">
+                                    <span>KRAUSE GATEWAY CENTER</span>
+                                    <span>2018</span>
+                                </div> 
+                            </li>
+
+                            <li>
+                                <img src="img/con_5_2.jpg" alt="파리 벤퍼 하이스">
+                                <div id="con_5_text" class="clearfix">
+                                    <span>PARIS VEMPER HOUSE</span>
+                                    <span>2021</span>
+                                </div> 
+                            </li>
+
+                            <li>
+                                <img src="img/con_5_3.jpg" alt="나가타초 아파트">
+                                <div id="con_5_text" class="clearfix">
+                                    <span>NAGATACHO APARTMENT</span>
+                                    <span>2020</span>
+                                </div> 
+                            </li>
+                            
+                        </ul>
+                         <!--con_5_img-->
+
+                     </div>
+                    <!--con_5_wrap-->
+                </section>  
+                <!--con_5-->
+            </div> 
+            <!-- con_wrap -->
+
+            <footer>
+                <div id="footer_wrap">
+                    <div id="footer_upper" class="clearfix">
+                        <div id="footer_text">
+                            <span>CARE & SERVICES</span>
+                            <span>COMPANY</span>
+                            <span>PRESS</span>
+                            <span>FOLLOW US</span>
+                        </div>
+    
+                        <div id="footer_icons" class="clearfix">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div id="footer_line"></div>
+
+                    <div id="footer_info">
+                        <div id="footer_info_left">
+                            <span>서울시 종로구 삼청로 104 하우스 오브 프리츠한센 스토어 03053</span>
+                            <span>Tel: +82 2 720 0242</span>
+                        </div>
+
+                        <div id="footer_info_right">
+                            <span>프리츠 한세 개인정보 보호정책</span>
+                        </div>
+                    </div>
+                </div>
+            </footer> 
+
+        </div> 
+        <!-- "wrap_center" -->
+    </div>
+     <!-- "wrap" -->
+
+</body>
+</html>

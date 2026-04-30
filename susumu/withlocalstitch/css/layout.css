@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #efefef;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+::selection {
+  /* background-color: #d2ffe4; */
+  background-color: #d5f7ba;
+  background-color: #bdf9f9;
+  /* background-color: #fbfc96; */
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+header {
+  width: 100%;
+  /* background-color: aqua; */
+  background-color: #efefef;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+#header_wrap {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: #000000 solid 0.1px;
+}
+
+h1 {
+  color: #000000;
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+h2 {
+  color: #000000;
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+header span {
+  color: #000000;
+  font-family: "Outfit", sans-serif;
+  font-size: 11px;
+  font-weight: 200;
+}
+header a {
+  color: #000000;
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+#header_left,
+#header_right {
+  float: left;
+}
+
+#header_right {
+  float: right;
+}
+
+#wrap_center {
+  position: relative;
+  top: 157.7px;
+  width: 90%;
+  margin: 0 auto;
+  /* background-color: lavender; */
+}
+
+section{
+  width: 90%;
+  margin: 0 auto;}
+  /* background-color: aquamarine; */
+  /* height: 5000px; */
+  /* margin-top: 30px;
+} */
+
+#img_1{
+  position: relative;
+  top: 30px;
+  width: 100%;
+  margin-top: 150px;
+}
+
+#img_1 img{
+  width: 100%;
+  margin-top: 30px;
+}
+
+#text_1{
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-bottom: #000000 solid 0.1px;
+}
+
+#text_1 h2{
+  color: #000000;
+  font-family: "Outfit", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+#text_1 h3{
+  color: #000000;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+#text_1 span{
+  display: block;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  padding-top: 50px;
+}
+
+#img_2{
+  width: 100%;
+  border-bottom: #000000 solid 0.1px;
+}
+
+#img_2 img{
+  padding: 30px 0;
+  width: 70%;
+
+}
+
+#text_2 {
+  border-bottom: #000000 solid 0.1px;
+}
+
+#text_2 h2,
+#text_2 p{
+  float: left;
+}
+
+#text_2 h2{
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 70px;
+  width: 40%;
+}
+
+#text_2 p{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  padding-top: 70px;
+  width: 60%;
+  line-height: 35px;
+  padding-bottom: 70px;
+}
+
+#img_3{
+  width: 100%;
+  padding: 30px 0;
+  border-bottom: #000000 solid 0.1px;
+
+}
+
+
+#img_3 img{
+  width: 100%;}
+
+
+
+#img_4,
+#img_5,
+#img_6 {
+  width: 100%;
+  padding: 30px 0;
+  border-bottom: #000000 solid 0.1px;
+
+}
+
+
+#img_4 img{
+  width: 40%;}
+  /* float: left; */
+  
+/* }
+
+#img_3 img:nth-child(2){
+  margin-left: 5%;
+} */
+
+#text_3{
+  width: 100%;
+  padding: 50px 0;
+} 
+
+#text_3 span{
+  display: block;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> 
+    <title>Friz Hansen by JOOYOUNG</title> 
+    <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+    <link href="dist/jquery.bxslider.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">   
+    <style type="text/css">
+        @font-face {font-family: "Hansen Grotesque";
+          src: url("1e8f3e91ec75b968da52ba69cc3be114.eot"); /* IE9*/
+          src: url("1e8f3e91ec75b968da52ba69cc3be114.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+          url("1e8f3e91ec75b968da52ba69cc3be114.woff2") format("woff2"), /* chrome、firefox */
+          url("1e8f3e91ec75b968da52ba69cc3be114.woff") format("woff"), /* chrome、firefox */
+          url("1e8f3e91ec75b968da52ba69cc3be114.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+          url("1e8f3e91ec75b968da52ba69cc3be114.svg#Hansen Grotesque") format("svg"); /* iOS 4.1- */
+        }
+    </style>
+ <script src="jquery-3.6.0.min.js" type="text/javascript" text="javascript"></script>
+ <script src="js/main.js" type="text/javascript" text="javascript"></script> 
+ <script src="dist/jquery.bxslider.min.js" type="text/javascript" text="javascript"></script>
+
+    <script>
+	 $(function(){
+
+			$('.slide').bxSlider({
+				  auto: false,
+				  autoControls: false,   //오른쪽 하단에 있는 동영상모양의 아이콘. 쓰기 싫으면 지우면 됨. 
+				  stopAutoOnClick: false, //좌우 버튼을 클릭하여 사진을 넘기면 넘겨진 사진만 보여지게되며  auto가 멈추게된다. 
+				  pager: false,  //img tag에서 title=""이 사진에 마우스를 대면 마우스 하단에 꼬리표처럼 보여짐. 사진 부연설명이 목적.
+				  slideWidth: 965
+			});
+
+		}); //구문닫기
+	</script>
+ 
+</head>
+<body>
+    <div id="wrap">
+        <div id="wrap_center">
+             <header>
+                <div id="header_wrap" class="clearfix" >
+                   <div id="logo_wrap">
+                       <div id="logo">
+                          <h1><a href="../"><img src="../img/logo.svg" alt="프리츠 한세 로고"></a></h1>
+                       </div>
+                  </div>
+                  
+                  <div id="menu_wrap">     
+                       <ul id="menu" class="clearfix">
+                           <li class="menu_item">
+                              <span>PRODUCT</span>
+                           </li>
+                           <li class="menu_item">
+                              <span>INSPIRATION</span>
+                          </li>
+                          <li class="menu_item">
+                              <span><a href="../about_us">ABOUT US</a></span>
+                          </li>
+                          <li class="menu_item">
+                              <span><a href="../designers">DESIGNERS</a></span>
+                          </li>
+                          <li class="menu_item">
+                              <span>NEWSLETTER</span>
+                          </li>
+                          <li class="menu_item">
+                              <span>EN/KOR</span>
+                          </li>
+                          <li class="menu_item search_icon">
+                               <span><img src="../img/new_search_bar_2.svg" alt="검색  아이콘"></span> 
+                          </li>
+                       </ul>
+                  </div>
+
+                </div>
+             </header>
+             <!-- header-->
+
+
+             <!-- nav -->
+             <nav> 
+               <div id="sub_menu_wrap">
+                   <ul id="sub_menu"  class="clearfix">
+                       <li class="sub_menu_item">
+                           <div><a href="../chair">CHAIR</a></div>
+                           <div><a href="../sofa">SOFA</a></div>
+                           <div><a href="../table">TABLE</a></div>
+                       </li>
+   
+                       <li class="sub_menu_item">
+                           <div><a href="../new_colors">NEW COLORS</a></div>
+                           <div><a href="../7_cool_architect">7 COOL ARCHITECT</a></div>
+                      </li> 
+
+                      <li class="sub_menu_item">
+                           <form class="clearfix" action="">
+                               <input type="text" name="newsletter_emailaddress" value="ENTER YOUR EMAIL ADDRESS">
+                               <button>OK</button>
+                           </form>
+                      </li>
+
+                      <li class="sub_menu_item">
+                           <form class="clearfix" action="">
+                               <input type="text" name="search_bar" value="">
+                               <button>SEARCH</button>
+                           </form>
+                  </li>
+                   </ul>
+               </div>
+             </nav>  
+
+             <!-- con_wrap -->
+             <div id="con_wrap">
+                <!--con_1-->
+                <section id="con_1">
+                    <div class="con_video_wrap">
+                        <video autoplay loop muted>
+                           <source src="../img/con_1_3.mp4" alt="프리츠한센의 새로운 컬러들">
+                        </video>
+                    </div>
+                </section>
+                <!--con_1-->
+
+                 <!--con_2-->
+                 <section id="con_2">
+                    <div id="con_2_wrap">
+                        <h2>
+                            A SENSE OF<br/>
+                            COLOR
+                        </h2>
+                        <p>
+                            디자이너 아르네 자쿱센의  가장 사랑받는 의자인 Grand Prix™, Ant™ and Series 7™를 위한  16가지의 세련된 컬러 팔래트를 새롭게 소개합니다.  프리츠 한세의 클래식한 컬러들에 새로운 생명을 불어넣은 새로운 팔레트는 놀랍도록 아름다운 톤의 세계를 선보입니다.  
+                        </p>
+                    </div>
+                </section>
+                 <!--con_2-->
+
+                 <!--con_3-->
+                <section id="con_3">
+                    <div id="con_3_wrap">
+                        <ul class="clearfix">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+    
+                        </ul>
+    
+                        <div id="con_3_info" class="clearfix">
+                            <div id="con_3_info_arrow"></div>
+                            <div id="con_3_info_text"> 
+                                <a href="">EXPLORE SERIES 7™</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--con_4-->
+                <section id="con_4">
+                    <div id="con_4_text_box">
+                        <h3>
+                            16 NEW COLORS
+                        </h3>
+                        <h4>
+                            아르네 자쿱센의 16가지 새로운 색
+                        </h4>
+                        <p>
+                            프리츠 한센은 진정으로 훌륭한 디자인을 능가하는 것은 없다고 믿습니다. 기능과 형태를 넘어 디자인은 우리의 가정과 일상을 바꾸어줍니다.<br/>
+                            디자이너 아르네 자쿱센의  가장 사랑받는 의자인 Grand Prix™, Ant™ and Series 7™를 위한  16가지의 세련된 팔레트를 자랑스럽게 소개합니다.<br/>
+                            프리츠 한세의 클래식한 컬러들에 새로운 생명을 불어넣은 이 팔레트는 놀랍도록 아름다운 톤의 세계를 선보입니다.<br/>
+                            이탈리아 디자이너 Carla Sozzani와의 협업을 통해 신중하게 선별된 각 색상들은 천연 소재를 보완할 뿐만 아니라 서로의 색상들과 어울리도록 개발되었습니다.<br/> 
+                            팔레트안에 색상들을 선택하고 배치해보면서 당신의 세계를 색칠해보세요.  
+                        </p>
+                    </div>
+
+                </section>
+                <!--con_4-->
+
+                <!--con_5-->
+                <section id="con_5">
+                    <div id="con_5_wrap">
+                        <h3>
+                            아르네 자쿱센의 16가지 색상 팔레트
+                        </h3>
+                        <img src="img/con_5.png" alt="아르네 자쿱센의 16가지 색상 팔레트">
+                    </div>
+                </section>
+                <!--con_5-->
+
+                <!--con_6-->
+                <section id="con_6">
+                    <div id="con_6_title">
+                        <h3>
+                            새로운 색상 자세히 보기 
+                        </h3>
+                    </div>
+                    
+                    <div id="con_6_slide_wrap">
+                        <ul class="slide">
+                            <li>
+                                <img src="img/con_6_1.jpg" alt="A GLIMPSE OF YELLOW"/>
+                                <div>
+                                    <h4>A GLIMPSE OF YELLOW</h4>
+                                    <h5>두 눈 가득 차오르는 노란색</h5>
+                                    <p>
+                                        따뜻한 밝은 노란색 사랑스럽습니다. 기분을 한 층 끌어 올리는 노랑은 활기찬 리듬으로 모든 공간을 밝게 비춥니다. 당신이 가장 좋아하는 색을 Ant™, Series 7™ and Grand Prix™의 기본 컬러들과 함께 조화롭게 배치하여 보세요.  
+                                    </p>
+                                </div>
+                            </li>
+                
+                            <li>
+                                <img src="img/con_6_2.jpg" alt="A TASTE OF PINK"/>
+                                <div>
+                                    <h4>A TASTE OF PINK</h4>
+                                    <h5>감각으로 느껴지는 분홍</h5>
+                                    <p>
+                                        딸기 젤라또처럼 달콤하고 신선한 장미처럼 사랑스럽습니다. 핑크는 아르네 야콥센의 의자 디자인에 특별한 의미를 부여합니다. 더 달콤하고 부드러운 분위기를 위해 주변에 핑크색을 추가하십시오.
+                                    </p>
+                                </div>
+                            </li>
+                
+                            <li>
+                                <img src="img/con_6_3 blue.jpg" alt="A NOTE OF BLUE"/>
+                                <div>
+                                    <h4>A NOTE OF BLUE</h4>
+                                    <h5>파랑의 향취</h5>
+                                    <p>
+                                        저녁 하늘처럼 맑거나 한밤중처럼 깊은 새 계열의 차분한 블루스가 분위기를 조성합니다. 블루 노트로 시대를 초월한 디자인을 발견하십시오.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section> 
+                <!--con_6-->
+                
+
+             </div>
+            <!-- con_wrap -->
+
+            <!-- footer -->
+            <footer>
+                <div id="footer_wrap">
+                    <div id="footer_upper" class="clearfix">
+                        <div id="footer_text">
+                            <span>CARE & SERVICES</span>
+                            <span>COMPANY</span>
+                            <span>PRESS</span>
+                            <span>FOLLOW US</span>
+                        </div>
+    
+                        <div id="footer_icons" class="clearfix">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div id="footer_line"></div>
+
+                    <div id="footer_info">
+                        <div id="footer_info_left">
+                            <span>서울시 종로구 삼청로 104 하우스 오브 프리츠한센 스토어 03053</span>
+                            <span>Tel: +82 2 720 0242</span>
+                        </div>
+
+                        <div id="footer_info_right">
+                            <span>프리츠 한세 개인정보 보호정책</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- footer -->
+
+        
+
+        </div> 
+        <!-- "wrap_center" -->
+    </div>
+     <!-- "wrap" -->
+</body>
+</html>
